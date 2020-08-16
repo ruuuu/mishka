@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <title>HTML Academy: Mishka</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body class="header">
+        <header class="page-header"><!-- шапка-->
+            <div class="page-header__wrapper">
+                <a class="page-header__logo" href="index.html">
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="img/">
+
+                        <source media="(min-width: 768px)" srcset="img/">
+
+                        <img class="page-header__logo-mobile" src="img/logo-mobile.svg" alt="лого" width="86" height="35">
+                    </picture>
+                </a>
+
+                <nav class="main-nav main-nav--opened main-nav--nojs"><!--меню -->
+                    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button><!-- для мобилки кнпоку бургер-->
+                    <div class="main-nav__wrapper">
+                        <ul class="main-nav__list site-list">
+                            <li class="site-list__item site-list__item--active"><!--активный пукнт меню модификартор active-->
+                                <a class="site-list__item-link index-desktop-link  site-list__item-link--active">Каталог товаров</a>
+                            </li>
+                            <li class="site-list__item">
+                                <a class="site-list__item-link index-desktop-link" href="catalog.html">Вязание на заказ</a>
+                            </li>
+                            <li class="site-list__item">
+                                <a class="site-list__item-link index-desktop-link" href="forma.html">Поиск по сайту</a>
+                            </li>
+                            <li class="site-list__item">
+                                <a class="site-list__item-link index-desktop-link" href="forma.html">Корзина: пока пуста</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h3 class="catalog-title">Каталог товаров</h3>
+            <section class="catalog">
+                <div class="catalog__wrapper">
+                    <ul class="catalog__list">
+                        <li class="catalog__item item"><!-- для item отдлеьный less файл-->
+                            <a class="item__image-link" href="">
+                                <img class="item__photo" src="img/photo-hare-mobile@1x.jpg" width="" height="" alt="">
+                            </a>
+                            <div class="item__information">
+                                <p class="item__name">Зайчик-попрыгайчик</p>
+                                <p class="item_weight">Рост 120, вес 50кг</p>
+                                <div class="item__price-container">
+                                    <span class="item__price">1200р</span><!-- псевдоэлементом сделать корзину-->
+                                    <a class="item__icon-svg" href="">
+                                        <svg class=""></svg><!-- иконка корзины-->
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="catalog__item item"><!-- для item отдлеьный блок-->
+                            <a class="item__image-link" href="">
+                                <img class="item__photo" src="img/photo-bowl-mobile@1x.jpg" width="" height="" alt="">
+                            </a>
+                            <div class="item__information">
+                                <p class="item__name">Корзинка для белья</p>
+                                <p class="item_weight">Диаметр 15 см, высота 10 см</p>
+                                <div class="item__price-container">
+                                    <span class="item__price">690р</span><!--псевдоэлементом сделать корзину-->
+                                    <a class="item__icon-svg" href="">
+                                        <svg class=""></svg><!-- иконка корзины-->
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="catalog__item item"><!-- для item отдлеьный блок-->
+                            <a class="item__image-link" href="">
+                                <img class="item__photo" src="img/photo-toys-mobile@1x.jpg" width="" height="" alt="">
+                            </a>
+                            <div class="item__information">
+                                <p class="item__name">Большая корзинка для игрушек</p>
+                                <p class="item_weight">Диаметр 30 см, высота 30 см</p>
+                                <div class="item__price-container">
+                                    <span class="item__price">1500р</span><!--псевдоэлементом сделать корзину-->
+                                    <a class="item__icon-svg" href="">
+                                        <svg class=""></svg><!-- иконка корзины-->
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="catalog__video video-content"><!-- для video-content отдлеьный less файл-->
+                    <div class="video-content__wrapper">
+                        <p class="video-content__title">Процесс видеопроизводства</p>
+                        <button class="video-content__video"><!-- в background-image сунуть фон с катушкой -->
+                            <img class="" src="img/icon-play.svg" width="101" height="77" alt="play-button"><!-- кнпока play-->
+                        </button>
+                        <p class="video-content__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                        <button class="button video-content__button" type="button">Сделать заказ</button>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="page-footer">
+                <div class="page-footer__wrapper"><!--флекс контенйер-->
+                    <a class="page-footer__logo footer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+                        <img class="footer-logo__image" src="img/footer-logo-svg.svg" width="128" height="24" alt="Интернерт-магазин">
+                    </a>
+
+                    <div class="page-footer__social social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--fb" href="https://vk.com/htmlacademy"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="page-footer__copyright copyright">
+                        <a class="copyright__text">
+                            <p>Разработано</p>
+                            <img src="img/htmlacademy-svg.svg" width="27" height="34" alt="logocopyright">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+
+
+            </body>
+
+        </html>
