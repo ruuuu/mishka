@@ -1,0 +1,176 @@
+.features{
+
+
+    @media (min-width: @tablet-width){
+
+    }
+
+    @media (min-width: @desktop-width){
+
+    }
+}
+
+
+.features__wrapper{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media (min-width: @tablet-width){
+      padding-left: 50px;
+      padding-right: 50px;
+      max-width: 772px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: @desktop-width){
+
+    }
+}
+
+
+.features__wrapper .section-title{
+    margin-bottom: 30px;
+    
+    @media (min-width: @tablet-width){
+      font-size: 43px;
+      line-height: 50px;
+      margin-bottom: 47px;
+          
+    }
+
+    @media (min-width: @desktop-width){
+
+    }
+    
+}
+
+
+.features__list{
+    display: flex;
+    flex-direction: column;
+    
+    @media (min-width: @tablet-width){
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    @media (min-width: @desktop-width){
+
+    }
+}
+
+
+.features__item{//флекс элемент
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;// будем позициогнать иконку относительно этого эемента
+
+    &::before{//псевдоэлемент иконка
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+
+    &--flowers::before{
+        width: 32px;
+        height: 37px;
+        background-image: url("../img/icon-feature-flower.svg");
+        background-size: 32px 37px;
+        background-repeat: no-repeat;
+
+     }
+
+    &--money::before{
+            width: 47px;
+            height: 27px;
+            background-image: url("../img/icon-feature-money.svg");
+            background-size: 47px 27px;
+            background-repeat: no-repeat;
+    }
+
+    &--hurt::before{
+            width: 34px;
+            height: 27px;
+            background-image: url("../img/icon-feature-heart.svg");
+            background-size: 34px 27px;
+            background-repeat: no-repeat;
+    } 
+        
+    &--klubok::before{
+            width: 35px;
+            height: 34px;
+            background-image: url("../img/icon-feature-ball.svg");
+            background-size: 35px 34px;
+            background-repeat: no-repeat;   
+    }  
+
+    &--raketa::before{
+            width: 55px;
+            height: 23px;
+            background-image: url("../img/icon-feature-rocket.svg");
+            background-size: 55px 23px;
+            background-repeat: no-repeat;   
+    }  
+   
+    &--gift::before{
+            width: 33px;
+            height: 32px;
+            background-image: url("../img/icon-feature-gift.svg");
+            background-size: 33px 32px;
+            background-repeat: no-repeat;   
+    }     
+    
+    @media (min-width: @tablet-width){
+        width: 300px;
+        //fles-grow: 1;
+        margin-right: 30px;
+        margin-bottom: 57px;
+        
+        &:nth-child(2){
+          order: 3;
+        }
+        
+        &:nth-child(3){
+          order: 5;
+        }
+        
+        &:nth-child(4){
+          order: 2;
+        }
+        
+        &:nth-child(5){
+          order: 4;
+        }
+        
+        &:nth-child(6){
+          order: 6;
+        }
+    }
+
+    @media (min-width: @desktop-width){
+
+    }
+}
+
+
+.features__item-description{
+    position: relative;
+    padding-top: 50px;//место дял иконки
+    
+    @media (min-width: @tablet-width){
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    @media (min-width: @desktop-width){
+
+    }
+}
+
+

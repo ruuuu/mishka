@@ -1,87 +1,117 @@
 body {
-  /*часто-встречающиеся стили*/
+    /*часто-встречающиеся стили*/
 
-  padding: 0;
-  margin: 0;
-  /*overflow-x: hidden;/*чтобы не было горизнтального скролла*/
-  color: #444444;
-  font-size: 15px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    /*overflow-x: hidden;/*чтобы не было горизнтального скролла*/
+    color: #444444;
+    font-size: 15px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    background-color: #ffffff;
 }
 
 
 ul { /*вместо этого создали миксин в (variables.less)*/
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 
 a {
-  text-decoration: none;
-  /*подчеркивание убираем*/
+    text-decoration: none;
+    /*подчеркивание убираем*/
 }
 
 
 img {
-  max-width: 100%;/*чтобы картика ужималась, тем самым не выпадала из родителя*/
-  height: auto;/*чтобы картинка не выпала из блока */
+    max-width: 100%;/*чтобы картика ужималась, тем самым не выпадала из родителя*/
+    height: auto;/*чтобы картинка не выпала из блока */
 }
 
 
 h1 { /*Линтер почему то ругается, если сразу  одновременно на все h1,h2,h3 задать стиль*/
-  margin: 0;
+    margin: 0;
 }
 
 h2 {
-  margin: 0;
+    margin: 0;
 }
 
 h3 {
-  margin: 0;
+    margin: 0;
 }
 
 
 p {
-  margin: 0;
+    margin: 0;
 }
 
 .container {
-  /*блок- центровщик */
+    /*блок- центровщик */
 
-  margin: 0 auto;
-  /*отцентрирваоли блок*/
-  padding: 0 20px;
+    margin: 0 auto;
+    /*отцентрирваоли блок*/
+    padding: 0 20px;
 }
 
+
+.button{
+    display: inline-block;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: #444444;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    border: 2px solid #444444;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
+    position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-  white-space: nowrap;
+    white-space: nowrap;
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 
 @media (min-width: @desktop-width) {
-  .container {
-    max-width: 940px; /*для photoblocks декстоп чтобы контенер с фтками не тялнулся при увеличении ширину экрана*/
-  }
+    .container {
+        max-width: 940px; /*для photoblocks декстоп чтобы контенер с фтками не тялнулся при увеличении ширину экрана*/
+    }
+}
+
+
+.section-title{
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
 }

@@ -15,27 +15,27 @@
                     <picture>
                         <source media="(min-width: 1300px)" srcset="img/">
 
-                        <source media="(min-width: 768px)" srcset="img/">
+                        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
 
                         <img class="page-header__logo-mobile" src="img/logo-mobile.svg" alt="лого" width="86" height="35">
                     </picture>
                 </a>
 
-                 <nav class="main-nav main-nav--opened main-nav--nojs"><!--меню -->
+                <nav class="main-nav main-nav--opened main-nav--nojs"><!--меню -->
                     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button><!-- для мобилки кнпоку бургер-->
                     <div class="main-nav__wrapper">
                         <ul class="main-nav__list site-list">
                             <li class="site-list__item site-list__item--active"><!--активный пукнт меню модификартор active-->
-                                <a class="site-list__item-link index-desktop-link  site-list__item-link--active">Каталог товаров</a>
+                                <a class="site-list__item-link site-list__item-link--active" href="catalog.html">Каталог товаров</a>
                             </li>
                             <li class="site-list__item">
-                                <a class="site-list__item-link index-desktop-link" href="catalog.html">Вязание на заказ</a>
+                                <a class="site-list__item-link" href="">Вязание на заказ</a>
                             </li>
                             <li class="site-list__item">
-                                <a class="site-list__item-link index-desktop-link" href="forma.html">Поиск по сайту</a>
+                                <a class="site-list__item-link" href="forma.html">Поиск по сайту</a>
                             </li>
                             <li class="site-list__item">
-                                <a class="site-list__item-link index-desktop-link" href="forma.html">Корзина: пока пуста</a>
+                                <a class="site-list__item-link" href="forma.html">Корзина: пока пуста</a>
                             </li>
                         </ul>
                     </div>
@@ -49,40 +49,51 @@
                     <p class="promo__text">Милые штуки ручной работы для дома</p>
                     <ul class="promo__list">
                         <li class="promo__item promo__item--interier"><!--promo__item--imterier отвечае за псевдоэлемент люстры -->
-                            <p class="promo__item-text">Предметы интерьера</p>
+                            <p class="promo__item-text">Предметы интерьера</p> 
                         </li>
                         <li class="promo__item promo__item--toy"><!--promo__item--toy отвечае за псевдоэлемент игршка -->
-                            <p class="promo__item-text">Детскиие игрушки</p>
+                            <p class="promo__item-text">Детские игрушки</p> 
                         </li>
                     </ul>
                 </div>
             </section>
 
             <section class="week-product">
-                <div class="week-product__wrapper">
-                    <h3 class="section-title">Вязаные корзинки</h3>
-                    <p class="week-product__title">Товар недели</p>
-                    <p class="week-product__info">
-                        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
-                    </p>
-                    <table class="week-product-specifications">
-                        <tr><!-- строка-->
-                            <td class="week-product__field">Цвет</td>
-                            <td class="week-product__value">«Тиффани»/серый
-                            </td>
-                        </tr>
-                        <tr><!-- строка-->
-                            <td class="week-product__field">Диаметр</td>
-                            <td class="week-product__value">25см</td>
-                        </tr>
-                        <tr><!-- строка-->
-                            <td class="week-product__field">Высота</td>
-                            <td class="week-product__value">17см</td>
-                        </tr>
-                    </table>
-                    <img src="img/triple-set-mobile@1x0.jpg" width="260" height="315" alt="tripple">
-                    <p class="week-product__price">990руб</p>
-                    <a class="button week-product__button" href="">Заказать</a>
+                <div class="week-product__wrapper"><!--флекс контейнер-->
+                    <div class="week-product__title-wrapper"><!--флекс элемент-->
+                        <h3 class="section-title">Вязаные корзинки</h3>
+                        <p class="week-product__title">Товар недели</p>
+                    </div>
+
+                    <div class="week-product__prams-wrapper"><!--флекс элемент-->
+                        <p class="week-product__info">
+                            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
+                        </p>
+                        <table class="week-product-specifications">
+                            <tr><!-- строка-->
+                                <td class="week-product__field">Цвет</td>
+                                <td class="week-product__value">«Тиффани»/серый
+                                </td>
+                            </tr>
+                            <tr><!-- строка-->
+                                <td class="week-product__field">Диаметр</td>
+                                <td class="week-product__value">25см</td>
+                            </tr>
+                            <tr><!-- строка-->
+                                <td class="week-product__field">Высота</td>
+                                <td class="week-product__value">17см</td>
+                            </tr>
+                        </table>
+                    </div>  
+
+                    <div class="week-product__image-wrapper"><!--флекс элемент-->
+                        <img class="week-product__image" src="img/triple-set-mobile@1x0.jpg" width="260" height="315" alt="tripple">
+                    </div>
+
+                    <div class="week-product__price-wrapper"><!--флекс элемент-->
+                        <p class="week-product__price">Цена: 990руб</p>
+                        <a class="button week-product__button" href="">Заказать</a>
+                    </div>
                 </div>
             </section>
 
@@ -91,22 +102,24 @@
                     <h3 class="section-title">Коротко о нас</h3>
                     <ul class="features__list">
                         <li class="features__item features__item--flowers"><!--features__item--flowers-псевдоэлемент картинка цветка -->
-                            Экологически чистые материалы
+                            <p class="features__item-description">Экологически чистые материалы</p>
                         </li>
                         <li class="features__item features__item--money">
-                            Скандинавский стиль по российской цене
+                            <p class="features__item-description">Скандинавский стиль по российской цене</p>
                         </li>
                         <li class="features__item features__item--hurt">
-                            Увеличивает лайки на фотографиях
+                            <p class="features__item-description">Увеличивает лайки на фотографиях</p>
                         </li>
                         <li class="features__item features__item--klubok">
-                            Связано вручную с любовью и умилением
+                            <p class="features__item-description">Связано вручную с любовью и умилением</p>
                         </li>
                         <li class="features__item features__item--raketa">
-                            Поддержка отечественного производителя
+                            <p class="features__item-description">Поддержка отечественного производителя</p>
                         </li>
                         <li class="features__item features__item--gift">
-                            Поставляется в подарочной упаковке
+                            <p class="features__item-description">
+                                Поставляется в подарочной упаковке 
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -121,8 +134,10 @@
                         </p>
                         <div class="reviews__button-wrapper">
                             <p class="reviews__author">Анастасия Красильникова <span>@misssssiskras</span></p>
-                            <button class="button reviews__button" type="button"><span class="visually-hidden">Назад</span></button>
-                            <button class="button reviews__button" type="button"><span class="visually-hidden">Вперед</span></button>
+                            <div class="reviews__button-wrapper1">
+                                <button class="button reviews__button" type="button"><span class="visually-hidden">Назад</span></button>
+                                <button class="button reviews__button" type="button"><span class="visually-hidden">Вперед</span></button>
+                            </div>
                         </div>
                     </div>
                     <a class="button reviews__button" href="">Написать</a>
@@ -142,18 +157,26 @@
                             <a href="">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</a>
                         </li>
                     </ul>
-                    <div class="contacts__map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab4f6043b3fef8a19740742b236bbfd79ef52920fda3041863dfe011bd153b11e&amp;source=constructor" height="457">
-                        </iframe>
-                    </div>
-                    <a class="button contacts__button" href="">Напишите нам</a>
+                </div>
+                <div class="contacts__map">
+                    <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.2443178324074!2d49.12772765092077!3d55.78899539657286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead1200f36adb%3A0x777489d5da1a528b!2z0YPQuy4g0J3QtdC60YDQsNGB0L7QstCwLCAyMSwg0JrQsNC30LDQvdGMLCDQoNC10YHQvy4g0KLQsNGC0LDRgNGB0YLQsNC9LCA0MjAwMTI!5e0!3m2!1sru!2sru!4v1587413590267!5m2!1sru!2sru" height="457" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="contacts__batton-wrapper">
+                    <a class="button contacts__button" href="">Напишите нам</a> 
                 </div>
             </section>
         </main>
 
+
+
+
         <footer class="page-footer">
             <div class="page-footer__wrapper"><!--флекс контенйер-->
-               <div class="page-footer__social social"><!-- для social заводим отдельный less файл-->
+                <a class="page-footer__logo footer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+                    <img class="footer-logo__image" src="img/icon-logo-footer.svg" width="102" height="34" alt="logo-footer">
+                </a>
+
+                <div class="page-footer__social social"><!-- для social заводим отдельный less файл-->
                     <ul class="social__list">
                         <li class="social__item">
                             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
@@ -170,11 +193,28 @@
                 <div class="page-footer__copyright copyright">
                     <a class="copyright__text">
                         <p>Разработано</p>
-                        <img src="img/htmlacademy-svg.svg" width="27" height="34" alt="logocopyright">
+                        <img src="img/htmlacademy.svg" width="27" height="34" alt="logocopyright">
                     </a>
                 </div>
             </div>
         </footer>
+
+        <script>
+            var navMain = document.querySelector('.main-nav');
+            var navToggle = document.querySelector('.main-nav__toggle');
+
+            navMain.classList.remove('main-nav--nojs');
+
+            navToggle.addEventListener('click', function() {
+                if (navMain.classList.contains('main-nav--closed')) {
+                    navMain.classList.remove('main-nav--closed');
+                    navMain.classList.add('main-nav--opened');
+                } else {
+                    navMain.classList.add('main-nav--closed');
+                    navMain.classList.remove('main-nav--opened');
+                }
+            });
+        </script> 
     </body>
 
 </html>

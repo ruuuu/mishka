@@ -1,0 +1,102 @@
+.main-nav{
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+
+    &--closed &__toggle{//кнопка бургер 
+        position: absolute;
+        top: -60px;
+        right: 30px;
+        left: auto;
+        z-index: 2;
+        display: block;
+        width: 25px;
+        height: 19px;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+
+        &:hover,
+        &:active{
+            //background-color: transparent;
+        }
+
+        @media (min-width: @tablet-width){
+            display: none;
+        }
+    }
+
+    &--closed &__toggle::before{//три полоски 
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 25px;//одна полоска
+        height: 2px;
+        background-color: #000000;
+        box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    }
+
+    &--opened &__toggle {//кнопка  закрытия крестик(меню открыто)
+        position: absolute;
+        top: -50px;
+        right: 30px;
+        left: auto;
+        background: transparent;
+        border: 0;
+
+        &::before,
+        &::after {//полоски крсетика
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25px;
+            height: 2px;
+            background-color: #000000;
+            outline: none;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+            box-shadow: none;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+
+        &:active::before,
+        &:active::after {
+            background-color: #000000;
+        }
+
+        @media (min-width: @tablet-width) {//на планшете и дектопе кноку зарутяи не отображаем
+            display: none;
+        }
+    }
+
+    &--nojs &__toggle {//При выключенных скриптах кнопка не должна отображаться
+        display: none;
+    }
+
+    @media (min-width: @tablet-width){
+
+    }
+
+    @media (min-width: @desktop-width){
+
+    }
+}
+
+
+@media (max-width: @mobile-width-only){//кнопка бургер будет только на мобилке
+    .main-nav--closed .site-list__item{
+        display: none;
+    }
+}
+
+
