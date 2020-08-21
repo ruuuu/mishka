@@ -26,7 +26,7 @@
     }
 
     @media (min-width: @desktop-width){
-
+        max-width: 1050px;
     }
 }
 
@@ -41,7 +41,10 @@
     }
 
     @media (min-width: @desktop-width){
-
+        font-size: 53px;
+        line-height: 57px;
+        z-index: 2;//что текст поверх картинки был
+        margin-right: auto;//флекс элемнетп рижмется к левому краю
     }
 }
 
@@ -59,7 +62,12 @@
     }
 
     @media (min-width: @desktop-width){
-
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 47px;
+        margin-bottom: -200px;
+            
     }
 }
 
@@ -74,7 +82,8 @@
     }
 
     @media (min-width: @desktop-width){
-
+        margin-top: 190px;
+        padding-left: 157px;
     }
 }
 
@@ -99,7 +108,7 @@
     }
 
     @media (min-width: @desktop-width){
-
+       padding-left: 157px;
     }
 }
 
@@ -115,10 +124,12 @@
     
     @media (min-width: @tablet-width){
        margin-bottom: 0;
+       width: 70px;
     }
 
     @media (min-width: @desktop-width){
-
+        z-index: 2;//чтоб текст поверх картинки был
+        margin-right: 35px;
     }
 }
 
@@ -195,7 +206,8 @@
     }
 
     @media (min-width: @desktop-width){
-
+        width: 525px;
+        height: 636px;
     }
 }
 

@@ -8,7 +8,7 @@
     }
 
     @media (min-width: @desktop-width){
-
+        margin-left: 50px;
     }
 }
 
@@ -22,8 +22,26 @@
     @media (min-width: @tablet-width){
         padding-left: 50px;
         padding-right: 50px;
+        padding-top: 90px;
         display: flex;
         flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 772px;
+    }
+
+    @media (min-width: @desktop-width){
+        padding-left: 30px;
+    }
+}
+
+
+.reviews__wrapper .section-title{
+
+    @media (min-width: @tablet-width){
+        font-size: 43px;
+        line-height: 50px;
+        
+        margin-bottom: 65px;
     }
 
     @media (min-width: @desktop-width){
@@ -32,13 +50,11 @@
 }
 
 
-.reviews__wrapper .section-title{
-    
+.reviews__item{//флекс элемент
+
+
     @media (min-width: @tablet-width){
-        font-size: 43px;
-        line-height: 50px;
-        padding-top: 86px;
-        margin-bottom: 65px;
+        order:2;
     }
 
     @media (min-width: @desktop-width){
@@ -52,7 +68,7 @@
     line-height: 30px;
 
     @media (min-width: @tablet-width){
-      font-size: 17px;
+        font-size: 17px;
         margin-bottom: 68px;
     }
 
@@ -109,16 +125,17 @@
     justify-content: center;
     max-width: 400px;
     margin: 0 auto;
-    
+
     @media (min-width: @tablet-width){//флекс элемент
         margin: 0;
-        margin-bottom: auto;
-        margin-left: auto;
-        //order:2;
         
+        margin-left: auto;
+        height: 22px;
     }
 
     @media (min-width: @desktop-width){
 
     }
 }
+
+

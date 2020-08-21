@@ -1,0 +1,122 @@
+.video-content{
+    
+    @media (min-width: @tablet-width){
+
+    }
+
+    @media (min-width: @desktop-width){
+        
+    }
+}
+
+ 
+.video-content__wrapper{
+    padding: 30px 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    
+    border: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    
+    @media (min-width: @tablet-width){
+
+    }
+
+    @media (min-width: @desktop-width){
+        
+    }
+}
+
+
+.video-content__title{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    display: flex;//чтоб иконку позиционарироть как флекс элемент
+    align-items: center;
+    
+    &::before{//псевдожлемент является флекс элементом 
+        content: "";
+        width: 46px;
+        height: 32px;
+        background-image: url(../img/icon-video.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 100% 32px;
+        margin-right: 25px;
+    }
+    
+    @media (min-width: @tablet-width){
+
+    }
+
+    @media (min-width: @desktop-width){
+        
+    }
+}
+
+
+.video-content__video{//кнопка
+    margin-bottom: 34px;
+    width: 100%;
+    height: 150px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/video-mobile@1x.jpg");
+    background-size: cover;
+    //position: relative;
+    @media (min-width: @tablet-width){
+
+    }
+
+    @media (min-width: @desktop-width){
+        
+    }
+}
+
+
+.video-content__video img{
+    //position: absolute;
+    //z-index: 10;
+    width: 101px;
+    height: 77px;
+}
+
+
+.video-content__info{
+    margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0 30px;
+    
+    @media (min-width: @tablet-width){
+
+    }
+
+    @media (min-width: @desktop-width){
+        
+    }
+}
+
+
+.video-content__button{
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    @media (min-width: @tablet-width){
+
+    }
+
+    @media (min-width: @desktop-width){
+        
+    }
+}

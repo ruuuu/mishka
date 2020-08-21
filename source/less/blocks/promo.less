@@ -14,10 +14,14 @@
         background-repeat: no-repeat;
         background-position: top center;
         object-fit: cover;
-
     }
 
-    @media (min-width: @desktop-width){
+    @media (min-width: @desktop-width){//1150
+        background-image: url("../img/hero-desktop@1x.jpg");
+        background-size: 100% 746px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        object-fit: cover;
 
     }
 }
@@ -73,11 +77,12 @@
         flex-direction: row;
         justify-content: center;
         margin: 0 auto;
-        max-width: 772px;
+        
     }
 
     @media (min-width: @desktop-width){
-
+        max-width: 1050px;
+        
     }
 }
 
@@ -100,23 +105,25 @@
         width: 40px;
         height: 62px;
         background-image: url("../img/icon-interior.svg");
-    }
+        }
 
 
-    &--toy:after{
+        &--toy:after{
             width: 60px;
             height: 60px;
             background-image: url("../img/icon-toy.svg");
+            }
+
+        @media (min-width: @tablet-width){
+            width: 400px;
+            flex-grow: 1;
         }
 
-    @media (min-width: @tablet-width){
-        max-width: 400px;
-        flex-grow: 1;
-    }
-
-    @media (min-width: @desktop-width){
-
-    }
+        @media (min-width: @desktop-width){
+           width: 50%;
+           //max-width: 0;
+           flex-grow: 0;
+        }
 }
 
 

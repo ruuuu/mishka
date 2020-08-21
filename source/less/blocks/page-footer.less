@@ -19,11 +19,16 @@
     justify-content: space-between;
     
     @media (min-width: @tablet-width){
-
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 772px;
     }
 
-    @media (min-width: @desktop-width){
-
+    @media (min-width: @desktop-width){//от 1150 px
+        max-width: 1050px;
     }
 }
 
@@ -32,6 +37,9 @@
     display: none;
     
     @media (min-width: @tablet-width){//
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     @media (min-width: @desktop-width){
