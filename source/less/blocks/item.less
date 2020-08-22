@@ -1,11 +1,27 @@
 .item{
+    display: flex;
+    flex-direction: column;
 
     @media (min-width: @tablet-width){
+        flex-direction: row;
 
     }
 
     @media (min-width: @desktop-width){
+        flex-direction: column;
+    }
+}
 
+
+.item__image-link{
+
+    @media (min-width: @tablet-width){
+        width: 50%;
+
+    }
+
+    @media (min-width: @desktop-width){
+        width: 316px;
     }
 }
 
@@ -17,11 +33,11 @@
     object-fit: cover;
 
     @media (min-width: @tablet-width){
-
+        height: 332px;
     }
 
     @media (min-width: @desktop-width){
-
+        height: 462px;
     }
 }
 
@@ -30,15 +46,16 @@
     display: flex;
     flex-direction: column;
     border: 1px solid #ececec;
-
     padding: 31px 28px;
 
     @media (min-width: @tablet-width){
-
+        width: 50%;
+        box-sizing: border-box;
     }
 
     @media (min-width: @desktop-width){
-
+        width: 316px;
+        height: 197px;
     }
 }
 
@@ -47,11 +64,10 @@
     font-size: 17px;
     line-height: 24px;
     font-weight: bold;
-   
     margin-bottom: 17px;
 
     @media (min-width: @tablet-width){
-
+        font-size: 20px;
     }
 
     @media (min-width: @desktop-width){
@@ -63,11 +79,11 @@
 .item_weight{
     font-size: 13px;
     line-height: 30px;
-    margin-bottom: 27px;
     
 
-    @media (min-width: @tablet-width){
 
+    @media (min-width: @tablet-width){
+        font-size: 15px;
     }
 
     @media (min-width: @desktop-width){
@@ -84,7 +100,7 @@
     padding-top: 25px;
 
     @media (min-width: @tablet-width){
-
+        margin-top: auto;// флекс ёлемен прижмется  книзу
     }
 
     @media (min-width: @desktop-width){
@@ -98,9 +114,9 @@
     font-size: 15px;
     line-height: 24px;
     font-weight: bold;
-    
-    @media (min-width: @tablet-width){
 
+    @media (min-width: @tablet-width){
+        font-size: 17px;
     }
 
     @media (min-width: @desktop-width){
