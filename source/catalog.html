@@ -50,7 +50,13 @@
                     <ul class="catalog__list">
                         <li class="catalog__item item"><!-- для item отдлеьный less файл-->
                             <a class="item__image-link" href="">
-                                <img class="item__photo" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="photo">
+                                <picture>
+                                    <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+
+                                    <source media="(min-width: 772px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+
+                                    <img class="item__photo" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="photo">
+                                </picture>
                             </a>
                             <div class="item__information">
                                 <p class="item__name">Зайчик-попрыгайчик</p>
@@ -66,7 +72,13 @@
 
                         <li class="catalog__item item"><!-- для item отдлеьный блок-->
                             <a class="item__image-link" href="">
-                                <img class="item__photo" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="photo">
+                                <picture>
+                                    <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+
+                                    <source media="(min-width: 772px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+
+                                    <img class="item__photo" src="img/photo-bowl-mobile@1x.jpg"  srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="photo">
+                                </picture>
                             </a>
                             <div class="item__information">
                                 <p class="item__name">Корзинка для белья</p>
@@ -82,7 +94,13 @@
 
                         <li class="catalog__item item"><!-- для item отдлеьный блок-->
                             <a class="item__image-link" href="">
-                                <img class="item__photo" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="photo">
+                                <picture>
+                                    <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+
+                                    <source media="(min-width: 772px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+
+                                    <img class="item__photo" src="img/photo-toys-mobile@1x.jpg"  srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="photo">
+                                </picture>
                             </a>
                             <div class="item__information">
                                 <p class="item__name">Большая корзинка для игрушек</p>
@@ -96,65 +114,71 @@
                             </div>
                         </li>
                     </ul>
-                </section>
+                    </section>
 
                 <section class="catalog__video video-content"><!-- для video-content отдлеьный less файл-->
                     <div class="video-content__wrapper">
                         <p class="video-content__title">Процесс производства</p>
-                        <iframe class="video-content__video" src="https://www.youtube.com/embed/6KzFuUkrX5g?autoplay=1&loop=1&&playlist=Video_ID" width="100%" height="150"><!-- в background-image сунуть фон с катушкой -->
-                            <img class="" src="img/icon-play.svg" width="101" height="77" alt="play-button"><!-- кнпока play-->
-                        </iframe>
+                        <div class="video-content__image-wrapper">
+                            <picture>
+                                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+
+                                <source media="(min-width: 772px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">  
+
+                                <img class="video-content__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"  width="260" height="150" alt="katushka">
+                            </picture>
+                        </div>
                         <p class="video-content__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                         <button class="button video-content__button" type="button">Сделать заказ</button>
                     </div>
                 </section>
-            </main>
+                </main>
 
             <footer class="page-footer">
-            <div class="page-footer__wrapper"><!--флекс контенйер-->
-                <a class="page-footer__logo footer-logo" href="https://htmlacademy.ru/intensive/adaptive">
-                    <img class="footer-logo__image" src="img/icon-logo-footer.svg" width="102" height="34" alt="logo-footer">
-                </a>
-
-                <div class="page-footer__social social"><!-- для social заводим отдельный less файл-->
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy"></a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--fb" href="https://vk.com/htmlacademy"></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="page-footer__copyright copyright">
-                    <a class="copyright__text">
-                        <p>Разработано</p>
-                        <img src="img/htmlacademy.svg" width="27" height="34" alt="logocopyright">
+                <div class="page-footer__wrapper"><!--флекс контенйер-->
+                    <a class="page-footer__logo footer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+                        <img class="footer-logo__image" src="img/icon-logo-footer.svg" width="102" height="34" alt="logo-footer">
                     </a>
+
+                    <div class="page-footer__social social"><!-- для social заводим отдельный less файл-->
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--fb" href="https://vk.com/htmlacademy"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="page-footer__copyright copyright">
+                        <a class="copyright__text">
+                            <p>Разработано</p>
+                            <img src="img/htmlacademy.svg" width="27" height="34" alt="logocopyright">
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
 
             <script>
-            var navMain = document.querySelector('.main-nav');
-            var navToggle = document.querySelector('.main-nav__toggle');
+                var navMain = document.querySelector('.main-nav');
+                var navToggle = document.querySelector('.main-nav__toggle');
 
-            navMain.classList.remove('main-nav--nojs');
+                navMain.classList.remove('main-nav--nojs');
 
-            navToggle.addEventListener('click', function() {
-                if (navMain.classList.contains('main-nav--closed')) {
-                    navMain.classList.remove('main-nav--closed');
-                    navMain.classList.add('main-nav--opened');
-                } else {
-                    navMain.classList.add('main-nav--closed');
-                    navMain.classList.remove('main-nav--opened');
-                }
-            });
-        </script> 
+                navToggle.addEventListener('click', function() {
+                    if (navMain.classList.contains('main-nav--closed')) {
+                        navMain.classList.remove('main-nav--closed');
+                        navMain.classList.add('main-nav--opened');
+                    } else {
+                        navMain.classList.add('main-nav--closed');
+                        navMain.classList.remove('main-nav--opened');
+                    }
+                });
+            </script> 
 
             </body>
 
