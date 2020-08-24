@@ -19,16 +19,23 @@
     flex-direction: column;
 
     @media (min-width: @tablet-width){
-        padding-top:0;
+        padding-top: 0;
         margin-left: 50px;
-        margin-right: 50px;
+        margin-rights: 50px;
         max-width: 772px;
         margin: 0 auto;
-        
+
     }
 
     @media (min-width: @desktop-width){
-
+        position: relative;
+        height: 350px;
+        padding-left: 755px;
+        padding-right: 55px;
+        padding-top: 45px;
+        padding-bottom: 60px;
+        max-width: 235px;
+        margin: 0 auto;
     }
 }
 
@@ -44,7 +51,7 @@
     display: flex;//чтоб иконку позиционарироть как флекс элемент
     align-items: center;
 
-    &::before{//псевдожлемент является флекс элементом 
+    &::before{//псевдоэлемент является флекс элементом 
         content: "";
         width: 46px;
         height: 32px;
@@ -61,44 +68,73 @@
     }
 
     @media (min-width: @desktop-width){
+        position: relative;
+        flex-direction: column;
+        margin-bottom: 33px;
+        width: 222px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 42px;
 
+        &::before{//псевдоэлемент является флекс элементом 
+            align-self: flex-start;//выранвивает элемент вдоль поперченой оси
+            margin-bottom: 30px;
+        }
     }
 }
 
 
-.video-content__video{//
+.video-content__image-wrapper{
+
+
+
+    @media (min-width: @tablet-width){
+
+    }
+
+    @media (min-width: @desktop-width){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 682px;
+        height: 455px;
+    }
+}
+
+
+.video-content__video{//img
     margin-bottom: 34px;
     width: 100%;
     height: 150px;
     border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    //position: relative;
+    position: relative;
+
+    &::before{//псевдоэлмнет-кнопка плей является флекс элементом 
+        content: "";
+        position: absolute;
+        width: 101px;
+        height: 77px;
+        background-image: url("../img/icon-play.svg");
+        background-size: 101px 77px;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 10;
+    }
+
 
     @media (min-width: @tablet-width){
         order: 1;
         height: 455px;
-        
+
     }
 
     @media (min-width: @desktop-width){
         width: 682px;
+        height: 455px;
+        margin: 0;
     }
 }
 
-
-
-
-
-.video-content__video img{//кнопка
-    //position: absolute;
-    //z-index: 10;
-    width: 101px;
-    height: 77px;
-}
 
 
 .video-content__info{
@@ -113,7 +149,9 @@
     }
 
     @media (min-width: @desktop-width){
-
+        width: 222px;
+        padding: 0;
+        margin-bottom: 51px;
     }
 }
 
@@ -127,6 +165,8 @@
     }
 
     @media (min-width: @desktop-width){
-
+        width: 222px;
+        margin-left: 0;
+        margin-right: 0;
     }
 }

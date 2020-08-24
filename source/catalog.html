@@ -98,7 +98,8 @@
                                     <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
 
                                     <source media="(min-width: 772px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-                                    <img class="item__photo" src="img/photo-toys-mobile@1x.jpg"  srcset="img/photo-toys-mobile@2x.jpg 2x"width="260" height="195" alt="photo">
+
+                                    <img class="item__photo" src="img/photo-toys-mobile@1x.jpg"  srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="photo">
                                 </picture>
                             </a>
                             <div class="item__information">
@@ -118,11 +119,15 @@
                 <section class="catalog__video video-content"><!-- для video-content отдлеьный less файл-->
                     <div class="video-content__wrapper">
                         <p class="video-content__title">Процесс производства</p>
-                        
-                            <iframe class="video-content__video" src="https://www.youtube.com/embed/6KzFuUkrX5g?autoplay=1&loop=1&&playlist=Video_ID" width="100%" height="150"><!-- в background-image сунуть фон с катушкой -->
-                                <img class="" src="img/icon-play.svg" width="101" height="77" alt="play-button"><!-- кнпока play-->
-                            </iframe>
-                       
+                        <div class="video-content__image-wrapper">
+                            <picture>
+                                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+
+                                <source media="(min-width: 772px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">  
+
+                                <img class="video-content__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"  width="260" height="150" alt="katushka">
+                            </picture>
+                        </div>
                         <p class="video-content__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                         <button class="button video-content__button" type="button">Сделать заказ</button>
                     </div>
