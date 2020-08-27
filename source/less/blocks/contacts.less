@@ -1,15 +1,17 @@
 .contacts{
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     @media (min-width: @tablet-width){
-
+        padding-top: 130px;
     }
 
     @media (min-width: @desktop-width){
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        //width: 1150px;
-        margin: 0;
+        max-width: 1150px;
+        margin: 0 auto;
         padding-top: 71px;
         position: relative;
         padding-bottom: 105px;
@@ -20,8 +22,7 @@
 .contacts__wrapper{
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
 
     @media (min-width: @tablet-width){
         padding-left: 50px;
@@ -31,11 +32,12 @@
     }
 
     @media (min-width: @desktop-width){
-        padding-top: 81px;
+        padding-top: 100px;
+        padding-bottom: 50px;
         padding-left: 113px;
         margin: 0;
         width: 300px;
-        padding-bottom: 50px;
+
     }
 }
 
@@ -60,7 +62,7 @@
     @media (min-width: @desktop-width){
         flex-direction: row-reverse;
         margin-bottom: 0;
-        
+
         &::after{//псевдоэлемнет (флаг) во флекс контенйере является флекс элеметвм
             margin-right: 50px;
             margin-left: 0;
@@ -82,7 +84,7 @@
     }
 
     @media (min-width: @desktop-width){
-            padding-left: 100px;
+        padding-left: 100px;
     }    
 }
 
@@ -138,7 +140,7 @@
         width: 525px;
         height: 457px;
         margin-bottom: 0;
-
+        padding-top: 100px;
     }
 }
 
@@ -187,7 +189,7 @@
 
     @media (min-width: @desktop-width){
         margin: 0;
-        
+
     }
 }
 
