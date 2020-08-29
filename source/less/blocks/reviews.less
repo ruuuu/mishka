@@ -3,16 +3,25 @@
     padding-bottom: 30px;
 
     @media (min-width: @tablet-width){
-        background-image: url("../img/review@1x.jpg");
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 350px 457px;
         position: relative;
 
-        &::after{
+        &::before{ //псевдоэлемент картинка
             content: "";
             position: absolute;
-            top: 590px;
+            left: calc((100% - 1150px)/2 + 50px);
+            top: 0;
+            width: 350px;
+            height: 457px;
+            background-image: url("../img/review@1x.jpg");//картинка
+            background-repeat: no-repeat;
+            background-size: 350px 457px;
+            z-index: -1;
+        }
+
+        &::after{//псевдоэлемент -зигзаг
+            content: "";
+            position: absolute;
+            top: 530px;
             left: 0;
             width: 100%;
             height: 15px;
@@ -22,8 +31,20 @@
     }
 
     @media (min-width: @desktop-width){
-        margin-left: 50px;
-        
+       
+        &::before{ //псевдоэлемент картинка
+            content: "";
+            position: absolute;
+            left: calc((100% - 1150px)/2 + 50px);
+            top: 0;
+            width: 350px;
+            height: 457px;
+            background-image: url("../img/review@1x.jpg");//картинка
+            background-repeat: no-repeat;
+            background-size: 350px 457px;
+            z-index: -1;
+        }
+
         &::after{
             background-image: none;
         }
@@ -39,7 +60,6 @@
     @media (min-width: @tablet-width){
         padding-left: 50px;
         padding-right: 50px;
-        padding-top: 90px;
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -47,16 +67,15 @@
     }
 
     @media (min-width: @desktop-width){
-        padding-left: 30px;
+        padding-left: 85px;
         position: relative;
-        max-width: 1050px;
-        padding-left: 0;
+        max-width: 768px;
         
-        &::after{
+        &::after{//псевдоэлемент-зигзаг
             content: "";
             position: absolute;
             top: 550px;
-            //left: 50px;
+            left: -80px;
             width: 1050px;
             height: 50px;
             background-image: url("../img/bg-zigzag-line-desktop.svg");
@@ -84,7 +103,6 @@
 
 
 .reviews__item{//флекс элемент
-
 
     @media (min-width: @tablet-width){
         order:2;
@@ -153,21 +171,45 @@
 }
 
 
-.reviews__button{
+.reviews__button-wrapper1{
     display: flex;
-    justify-content: center;
-    max-width: 400px;
-    margin: 0 auto;
-
-    @media (min-width: @tablet-width){//флекс элемент
-        margin: 0;
-
-        margin-left: auto;
-        height: 22px;
+    width: 260px;
+    
+    @media (min-width: @tablet-width){
+        
     }
 
     @media (min-width: @desktop-width){
 
+    }
+}
+
+
+.reviews__button{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px; 
+    
+    @media (min-width: @tablet-width){//флекс элемент
+        margin: 0;
+        
+    }
+
+    @media (min-width: @desktop-width){
+
+    }
+}
+
+
+.reviews__button--left{
+    border: 1px solid #ececec;
+        
+    &::before{
+        content: "";
+        width: 50px;
+        height: 26px;
+        background-image: url("../img/icon-left-arrow.svg");
+            
     }
 }
 
