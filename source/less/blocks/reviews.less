@@ -31,7 +31,7 @@
     }
 
     @media (min-width: @desktop-width){
-       
+
         &::before{ //псевдоэлемент картинка
             content: "";
             position: absolute;
@@ -70,7 +70,7 @@
         padding-left: 85px;
         position: relative;
         max-width: 768px;
-        
+
         &::after{//псевдоэлемент-зигзаг
             content: "";
             position: absolute;
@@ -173,10 +173,13 @@
 
 .reviews__button-wrapper1{
     display: flex;
-    width: 260px;
+    //width: 260px;
+    margin: 0 auto;
+    justify-content: center;
+    
     
     @media (min-width: @tablet-width){
-        
+        margin: 0;
     }
 
     @media (min-width: @desktop-width){
@@ -185,14 +188,17 @@
 }
 
 
-.reviews__button{
+.reviews__button{//флекс элемент
     display: flex;
     justify-content: center;
-    padding: 10px 20px; 
-    
-    @media (min-width: @tablet-width){//флекс элемент
+    align-items: center;
+    padding: 20px 60px; 
+    flex-grow: 1;
+    max-width: 200px;
+
+    @media (min-width: @tablet-width){
         margin: 0;
-        
+
     }
 
     @media (min-width: @desktop-width){
@@ -201,16 +207,36 @@
 }
 
 
-.reviews__button--left{
-    border: 1px solid #ececec;
-        
-    &::before{
-        content: "";
-        width: 50px;
-        height: 26px;
-        background-image: url("../img/icon-left-arrow.svg");
-            
+.reviews__item .button{
+   
+    
+    @media (min-width: @tablet-width){
+
+    }
+
+    @media (min-width: @desktop-width){
+
     }
 }
 
 
+.reviews__button--left{//флекс элемент
+    border: 1px solid #ececec;
+    width: 50px;
+    height: 26px;
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 50px 26px;
+    background-position: center;
+}
+
+
+.reviews__button--right{//флекс элемент
+    border: 1px solid #ececec;
+    width: 50px;
+    height: 26px;
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 50px 26px;
+    background-position: center;
+}
